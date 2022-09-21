@@ -1,6 +1,3 @@
-#include <iostream>
-#include <vector>
-
 void coord_compression(std::vector<int> a, int n) {
   std::vector<int> b = a;
   std::sort(b.begin(), b.end());
