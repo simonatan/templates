@@ -1,3 +1,6 @@
+// source: https://github.com/jakobkogler/Algorithm-DataStructures/blob/master/Math/Modular.h
+//         https://github.com/bqi343/USACO/blob/master/Implementations/content/number-theory%20(11.1)/Modular%20Arithmetic/ModIntShort.h
+
 #include <iostream>
 typedef long long ll;
 
