@@ -14,18 +14,12 @@ void build() {
 }
 
 void add(int p, int v) {
-	while (p < n) {
-		t[p] += v;
-		p += p & -p;
-	}
+	for( ; p < n; p += p & -p) t[p] += v;
 }
 
 long long sum(int r) {
 	long long res = 0;
-	while (r) {
-		res += t[r];
-		r -= r & -r;
-	}
+	for(; r; r -= r & -r) res += t[r];
 	return res;
 }
 
