@@ -8,7 +8,7 @@ int t[MX], ar[MX];
 void build() {
 	for(int i = 0; i < n; i++) t[i] = ar[i];
 	for(int i = 1; i < n; i++) {
-		j = i & -i;
+		j = i + i & -i;
 		if (j < n) t[j] += t[i];
 	}
 }
