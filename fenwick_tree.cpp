@@ -29,5 +29,5 @@ long long sum(int l, int r) {
 
 void set(int p, int v) {
 	int s = sum(p, p);
-	add(p, k - s);
+	add(p, v - s);
 }
