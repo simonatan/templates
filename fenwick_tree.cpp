@@ -1,7 +1,7 @@
 const int MX = 2e5 + 5;
 
 int n;
-int t[MX], ar[MX];
+int t[2 * MX], ar[MX];
 
 // lsb = i & -i
 
