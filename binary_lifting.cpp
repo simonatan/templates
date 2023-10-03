@@ -1,3 +1,7 @@
+// O(NlogN) build
+// O(logN) per query
+// 0 - indexed
+
 #include <iostream>
 #include <vector>
 
