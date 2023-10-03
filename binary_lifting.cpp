@@ -27,7 +27,7 @@ int lift(int node, int k) {
 			node = up[node][e];
 		}
 	}
-	return node;
+	return node; // -1 if such an ancestor doesn't exist
 }
 
 int lca(int a, int b) {
