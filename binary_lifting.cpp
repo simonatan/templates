@@ -10,7 +10,6 @@ int up[MX][MXE], depth[MX];
 
 void dfs(int cur, int prev) {
 	for(int e = 1; e < MXE; e++) {
-		if (up[cur][e] == -1) continue;
 		up[cur][e] = up[up[cur][e - 1]][e - 1];
 	}
 
