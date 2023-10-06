@@ -2,7 +2,7 @@
 
 std::vector<int> lis(const std::vector<int>& a) {
 	std::vector<int> dp;
-	int ind[MX];
+	int ind[MX], n = a.size();
 
 	for(int i = 0; i < n; i++) {
 		int pos = std::lower_bound(a.begin(), a.end(), a[i]) - a.begin();
