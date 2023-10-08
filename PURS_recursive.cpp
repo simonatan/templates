@@ -2,7 +2,7 @@ int n, a[MX];
 int t[4 * MX];
 
 void build(int x = 0, int lx = 0, int rx = 2 * MX) {
-	if (tx - lx == 1 && lx < a.size()) t[v] = a[lx];
+	if (tx - lx == 1 && lx < a.size()) t[x] = a[lx];
 	else {
 		int m = (lx + rx) / 2;
 		build(x << 1, lx, m);
