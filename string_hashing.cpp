@@ -14,5 +14,5 @@ void gen(std::string& s) {
 
 long long get_hash(int st, int en) {
 	long long prev = hash[st] * pow[en - st + 1] % M;
-	return ((M + hash[en]) - prev) % M;
+	return ((M + hash[en + 1]) - prev) % M;
 }
