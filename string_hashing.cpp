@@ -1,0 +1,18 @@
+const long long M = 1e9 + 9; 
+const long long B = 9973;
+
+std::vector<long long> hash, pow;
+void gen(std::string& s) {
+	hash.push_back(0);
+	pow.push_back(1);
+	for(int i = 0; i < s.size(); i++) {
+		long long cur = ((hash.back() * B) % M + s[i]) % M;
+		hash.push_back(cur);
+		pow.push_back(pow.back() * B % M);
+	}
+}
+
+long long get_hash(int st, int en) {
+	long long prev = hash[st] * pow[en - st + 1] % M;
+	return ((M + hash[en]) - prev) % M;
+}
