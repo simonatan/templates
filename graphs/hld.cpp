@@ -10,7 +10,7 @@ int sz[MX], par[MX], dep[MX];
 int t[2 * MX], id[MX], top[MX], heavy[MX];
 
 void build() {
-	for(int i = n - 1; i >= 0; i--) {
+	for(int i = n - 1; i > 0; i--) {
 		t[i] = std::max(t[i << 1], t[i << 1 | 1]);
 	}
 }
