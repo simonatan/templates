@@ -19,7 +19,7 @@ void fact() {
 
 ll inv[MX + 1];
 void inverse() {
-    inv[MX] = exp(MX, MOD - 2);
+    inv[MX] = exp(fac[MX], MOD - 2);
     for(int i = MX; i >= 1; i--) inv[i - 1] = inv[i] * i % MOD;
 }
 
