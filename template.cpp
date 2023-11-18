@@ -3,6 +3,7 @@
 #include <queue>
 #include <set>
 #include <iomanip>
+#include <algorithm>
 #include <numeric>
 #include <map>
 #include <stack>
