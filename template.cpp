@@ -10,7 +10,7 @@
 
 #define dbg(v) std::cerr<<#v<<" = "<<v<<"\n";
 #define show(x) std::cerr<<#x<<": "; for(auto i : x) std::cerr<<i<<" "; std::cerr<<"\n";
-#define fastIO std::cin.tie(0)->std::sync_with_stdio(0);
+#define fast_io std::cin.tie(0)->std::sync_with_stdio(0);
 #define all(x) x.begin(), x.end()
 #define uniq(x) x.erase(std::unique(all(x)), x.end())
 #define pii std::pair<int, int>
