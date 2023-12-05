@@ -1,3 +1,5 @@
+#include <functional>
+
 auto firstTrue = [&] (int lo, int hi, const std::function<bool(int)>& ok) {
         assert(lo <= hi); hi++;
         while (lo < hi) {
