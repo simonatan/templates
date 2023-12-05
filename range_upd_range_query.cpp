@@ -52,7 +52,7 @@ void push(int x, int lx, int rx) {
         t[x << 1].set = t[x << 1 | 1].set = t[x].set;
         t[x << 1].val = (mid - lx + 1) * t[x << 1].set;
         t[x << 1 | 1].val = (rx - mid + 1) * t[x << 1 | 1].set;
-        t[x << 1].add = t[x << 1 | 1].add = 0; // why
+        t[x << 1].add = t[x << 1 | 1].add = 0;
         t[x].set = 0;
     } else if (t[x].add != 0) {
         if (t[x << 1].set == 0) t[x << 1].add += t[x].add;
@@ -67,7 +67,7 @@ void push(int x, int lx, int rx) {
             t[x << 1 | 1].add = 0;
         }
 
-        t[x << 1].val += (mid - lx + 1) * t[x].add; // why
+        t[x << 1].val += (mid - lx + 1) * t[x].add;
         t[x << 1 | 1].val += (rx - mid + 1) * t[x].add;
         t[x].add = 0;
     }
