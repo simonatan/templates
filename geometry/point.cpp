@@ -16,6 +16,9 @@ p operator - (p a, p b) { return {a.f - b.f, a.s - b.s}; }
 p operator * (p a, t b) { return {a.f * b, a.s * b}; }
 p operator / (p a, t b) { return {a.f / b, a.s / b}; }
 
+std::istream& operator >> (std::istream& is, p& a) { return is >> a.x >> a.y; }
+std::ostream& operator << (std::ostream& os, p& a) { return os << a.x << a.y; }
+
 t dot(const p& a, const p& b) { return a.f * b.f + a.s * b.s; }
 t dot(const p& c, const p& a, const p& b) { return dot(a - c, b - c); }
 t cross(const p& a, const p& b) { return a.f * b.s - a.s * b.f; }
