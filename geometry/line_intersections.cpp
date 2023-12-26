@@ -1,4 +1,5 @@
-// could lead to overcounting, i might update it in the future
+// could lead to overcounting since the intersection points aren't unique. in most cases though problems are set in such a way that this isn't an issue
+// i might update it in the future to account for this
 // O(NlogN)
 
 #include <iostream>
