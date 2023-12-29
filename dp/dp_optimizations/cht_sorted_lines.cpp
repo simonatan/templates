@@ -36,7 +36,7 @@ template <class T> bool max(T& a, const T& b) {
     return b > a ? a = b, 1 : 0;
 }
 
-// statement: you're given n lines {m_i; c} and q query points xj. for each query
+// statement: you're given n lines {m_i; c} sorted by their slope and q query points xj. for each query
 // find the min/max value of y_i = m_i * x_j + c_i.
 // in this case we'll be finding the min but both cases are analogous
 
@@ -57,7 +57,6 @@ bool check(line l1, line l2, line l3) { // if true we good, otherwise we continu
     return intersection(l1, l2) < intersection(l2, l3);
 }
 
-// offline adding
 void add(line a) {
     while (lines.size() > 2 && !check(lines[lines.size() - 2], lines.back(), a)) {
         lines.pop_back();
