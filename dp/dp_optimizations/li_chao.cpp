@@ -1,6 +1,6 @@
 // dynamic CHT 
 // works in O(logC) where C is the max value of x; typically this number is not big enough to cause problems but if necessary you can always coordinate compress and then C = N
-// better constant factor than CHT and easier to implement so we love <3 (ref. lineContainer)
+// better constant factor than CHT and easier to implement cuz she slays <3 (ref. lineContainer)
 
 #include <iostream>
 #include <vector>
