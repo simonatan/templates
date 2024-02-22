@@ -6,7 +6,8 @@ public class sortings {
 //        BubbleSort.bubbleSort(list);
 //        SelectionSort.selectionSort(list);
 //        InsertionSort.insertionSort(list);
-        QuickSort.quickSort(list, 0, list.length - 1);
+//        QuickSort.quickSort(list);
+        MergeSort.mergeSort(list);
         print(list);
 
     }
