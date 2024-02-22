@@ -1,5 +1,9 @@
 public class BubbleSort {
-    public static void bubbleSort(int[] list) {
+    public static void sort(int[] list) {
+        bubbleSort(list);
+    }
+
+    private static void bubbleSort(int[] list) {
         for(int k = 0; k < list.length - 1; k++) {
             for(int i = 0; i < list.length - 1 - k; i++) {
                 if (list[i] > list[i + 1]) {
