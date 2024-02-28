@@ -6,9 +6,9 @@ public class sortings {
 //        BubbleSort.sort(list);
 //        SelectionSort.sort(list);
 //        InsertionSort.sort(list);
-//        QuickSort.sort(list);
-//        MergeSort.sort(list);
-        HeapSort.sort(list);
+        QuickSort.sort(list);
+//        list = MergeSort.mergeSort(list);
+//        HeapSort.sort(list);
         print(list);
     }
 
